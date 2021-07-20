@@ -1,0 +1,30 @@
+.footer {
+    padding: 110px 0 110px;
+    width: 100%;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 9px;
+        font-size: 24px;
+    }
+
+    &__social {
+        padding: 5px 12px;
+        transition: color 1s ease;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    &--bg {
+        background: url('../images/dest/img-15.jpg') no-repeat top center;
+        background-size: cover;
+    }
+}

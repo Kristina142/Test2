@@ -1,0 +1,68 @@
+.form {
+    display: block;
+    margin: 0 auto;
+    max-width: 668px;
+
+    &__wrap {
+        margin: 61px -32px 20px;
+
+        @media (max-width: $media-md) {
+            margin: 20px 0;
+        }
+    }
+
+    &__col {
+        padding: 0 32px;
+
+        @media (max-width: $media-md) {
+            padding: 0;
+        }
+    }
+
+    &__input {
+        font-size: $font-18;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid $gray-border;
+        width: 100%;
+        font-style: italic;
+        min-height: 51px;
+        padding: 0 28px;
+        letter-spacing: 0.7px;
+        margin-bottom: 78px;
+
+        @media (max-width: $media-md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $media-md) {
+            flex-direction: column;
+        }
+    }
+
+    &--col-1 {
+        width: 100%;
+    }
+
+    &--col-2 {
+        width: 50%;
+
+        @media (max-width: $media-md) {
+            width: 100%;
+        }
+    }
+    
+    &--message {
+        resize: none;
+        max-height: 62px;
+        padding-top: 25px;
+        padding-bottom: 5px;
+        margin-bottom: 47px;
+    }
+}

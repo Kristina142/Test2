@@ -1,0 +1,87 @@
+.skills {
+    padding: 110px 0 97px;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+
+    &__col {
+        width: 50%;
+
+        @media (max-width: $media-lg) {
+            width: 100%;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width: 100%;
+
+        @media (max-width: $media-lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__h3 {
+        font-size: $font-27;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .489px;
+        margin-bottom: 12px
+    }
+
+    &__content {
+        font-weight: 300;
+        font-size: $font-23;
+        text-align: left;
+        line-height: 1.29;
+        max-width: 534px;
+        letter-spacing: .75px;
+
+        @media (max-width: $media-lg) {
+            max-width: 100%;
+        }
+    }
+
+    &__name {
+        display: block;
+        font-size: $font-14;
+        color: $gray-text;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+    }
+
+    &__progress {
+        position: relative;
+        width: 100%;
+        background: $gray-line;
+        height: 14px;
+        border-radius: 10px;
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: $primary-color;
+        border-radius: 10px;
+    }
+
+    &__wrap {
+        text-align: left;
+        padding-left: 14px;
+
+        @media (max-width: $media-lg) {
+            padding-left: 0;
+        }
+    }
+}
+

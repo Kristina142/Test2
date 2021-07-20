@@ -1,0 +1,38 @@
+.clients {
+    padding: 110px 0 131px;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+    
+    &__col {
+        @media (max-width: $media-lg) {
+            padding: 20px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 40px;
+
+        @media (max-width: $media-lg) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &--bg {
+        background: $gray-bg;
+    }
+
+    &--filter {
+        filter: grayscale(1);
+        transition: all .2s linear;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+}

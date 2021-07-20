@@ -1,0 +1,35 @@
+.quote {
+    padding: 117px 0 54px;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+
+    &__area {
+        margin: 0;
+        font-weight: 100;
+        text-align: center;
+        line-height: 1.371;
+
+        p {
+            font-size: $font-35;
+            padding: 0 0 0 9px;
+            letter-spacing: .8px;
+            margin-bottom: 55px;
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+            font-size: $font-21;
+            text-transform: uppercase;
+        }
+    }
+
+    &--bg {
+        background: url('../images/dest/img-10.jpg') no-repeat top center;
+        background-size: cover;
+    }
+}

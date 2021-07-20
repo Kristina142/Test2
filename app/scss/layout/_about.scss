@@ -1,0 +1,16 @@
+.about {
+    padding: 110px 0 92px;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+
+    &__wrap {
+        max-width: 765px;
+        hyphens: auto;
+
+        p {
+            line-height: 1.636;
+        }
+    }
+}

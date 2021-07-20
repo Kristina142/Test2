@@ -1,0 +1,135 @@
+.btn {
+    border: 0;
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .2s linear;
+
+    &--download {
+        border-radius: 50%;
+        width: 92px;
+        height: 92px;
+        opacity: .5;
+        border: 3px solid;
+        color: $white;
+        display: flex;
+        margin: 0 auto;
+        font-size: 32px;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            color: $primary-color;
+            opacity: 1;
+        }
+
+        @media (max-width: $media-md) {
+            font-size: 22px;
+            width: 60px;
+            height: 60px;
+        }
+
+        i {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+    &--burger {
+        position: relative;
+        text-indent: -9999px;
+        overflow: hidden;
+        width: 30px;
+        height: 24px;
+        margin-left: 12px;
+        visibility: hidden;
+
+        @media (max-width: $media-lg) {
+            visibility: visible;
+        }
+
+        &::before, 
+        &::after, 
+        span {
+            content: '';
+            position: absolute;
+            height: 4px;
+            left: 0;
+            right: 0;
+            background: $white;
+            transition: all .2s linear;
+        }
+
+        span {
+            top: 10px;
+
+            .active & {
+                display: none;
+            }
+        }
+
+        &::after {
+            top: 20px;
+
+            .active & {
+                transform: rotate(-45deg);
+                top: 10px;
+            }
+        }
+
+        &::before {
+            top: 0;
+
+            .active & {
+                transform: rotate(45deg);
+                top: 10px;
+            }
+        }
+    }
+
+    &--work {
+        border: 3px solid $basic-black;
+        font-size: $font-24;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 370px;
+        min-height: 60px;
+        letter-spacing: 0.6px;
+
+        @media (max-width: $media-md) {
+            max-width: 265px;
+        }
+
+        &:hover {
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+
+    &--form {
+        border: 3px solid $basic-white;
+        font-size: $font-24;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 183px;
+        min-height: 60px;
+        letter-spacing: 0.6px;
+
+        @media (max-width: $media-md) {
+            max-width: 265px;
+        }
+
+        &:hover {
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+}
+
+
+
+
+

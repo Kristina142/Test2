@@ -1,0 +1,81 @@
+.services {
+    padding: 110px 0 75px;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+
+    &__block {
+        padding: 0 0 0 5px;
+    }
+
+    &__body {
+        max-width: 334px;
+        margin: 0 auto;
+        letter-spacing: 0.4px;
+
+        p {
+            font-size: $font-16;
+            hyphens: auto;
+            line-height: 1.9;
+        }
+    }
+
+    &__h3 {
+        text-transform: capitalize;
+        font-family: $base-font-sans-serif;
+        font-weight: 400;
+        margin-bottom: 28px;
+    }
+
+    &__header {
+        min-height: 188px;
+        margin-bottom: 12px;
+    }
+
+    &__img {
+        max-height: 150px;
+    }
+
+    &__slider {
+        overflow: hidden;
+        padding-bottom: 66px;
+
+        .slick-dots {
+            bottom: 0;
+
+            li {
+                margin: 0 6px 0 0;
+
+                button {
+                    &::before {
+                        width: 27px;
+                        height: 27px;
+                        font-size: 13px;
+                        color: $gray-bt;
+                        opacity: 1;
+                    }
+
+                    &:hover {
+                        &::before {
+                            color: $primary-color;
+                        }
+                    }
+                }
+
+                &.slick-active {
+                    button {
+                        &::before {
+                            color: $primary-color;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick-list {
+            transition: all .5s ease;
+        }
+    }
+}

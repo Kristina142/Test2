@@ -1,0 +1,60 @@
+$white: #fff;
+$black: #000;
+$basic-white: #fffefe;
+$basic-black: #222222;
+$primary-color: #005494;
+$grey-light: #767676;
+$grey-dark: #676767;
+$gray-bg: #f4f4f4;
+$gray-bt: #d5d5d5;
+$gray-border: #afafaf;
+$gray-line: #eeeeee;
+$gray-text: #888;
+
+$font-60: 60px;
+$font-48: 48px;
+$font-45: 45px;
+$font-35: 35px;
+$font-27: 27px;
+$font-24: 24px;
+$font-22: 22px;
+$font-23: 23px;
+$font-21: 21px;
+$font-19: 19px;
+$font-18: 18px;
+$font-16: 16px;
+$font-15: 15px;
+$font-14: 14px;
+$font-13: 13px;
+
+$base-font-sans-serif: 'Lato', sans-serif;
+$font-sans-serif: 'Raleway', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+
+// Body
+$base-text-color: $basic-black !default;
+$base-background-color: $white !default;
+$font-size-base: 16px !default;
+$line-height-base: 1.2 !default;
+$base-font-family: $base-font-sans-serif !default;
+
+$base-min-width: 320px;
+$base-max-width-container: 1210px;
+
+// Headers
+$h1-font-size: 48px !default;
+$h2-font-size: 35px !default;
+$h3-font-size: 24px !default;
+$h4-font-size: 22px !default;
+$h5-font-size: 18px !default;
+$h6-font-size: 16px !default;
+
+$headings-font-family: $font-sans-serif !default;
+$headings-color: inherit !default;
+
+$media-lg: 1024px;
+$media-md: 768px;
+$media-xs: 480px;
+$media: 320px;
+
+
+

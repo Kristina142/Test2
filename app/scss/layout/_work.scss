@@ -1,0 +1,130 @@
+.work {
+    padding: 109px 0 80px;
+
+    @media (max-width: $media-lg) {
+        padding: 40px 0 30px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 1s ease;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__hover {
+        visibility: hidden;
+        position: absolute;
+        top: 10px;
+        bottom: 10px;
+        left: 15px;
+        right: 15px;
+        background: rgba($black, .749);
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all .5s linear;
+
+        i {
+            font-size: 41px;
+        }
+    }
+
+    &__box {
+        width: 33.33%;
+        position: relative;
+        padding: 10px 15px;
+
+        @media (max-width: $media-md) {
+            width: 50%;
+        }
+
+        @media (max-width: $media-xs) {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        &:hover {
+            .work__hover {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__h4 {
+        margin: 26px 0 31px;
+        font-weight: 400;
+        letter-spacing: -.3px;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-size: $font-19;
+        color: $grey-light;
+        margin: 0 auto 57px;
+        max-width: 613px;
+
+        @media (max-width: $media-lg) {
+            margin: 0 auto 30px;
+        }
+
+        @media (max-width: $media-md) {
+            flex-direction: column;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        display: block;
+        cursor: pointer;
+        white-space: nowrap;
+        transition: all .5s linear;
+
+        &:hover {
+            a {
+                color: $basic-black;
+            }
+        }
+
+        a {
+            padding: 15px 5px;
+            display: block;
+
+            @media (max-width: $media-md) {
+                padding: 8px 5px;
+            }
+
+            &.active {
+                color: $basic-black;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__tab {
+        margin-bottom: 69px;
+    }
+}
+
+.js-tab-hidden {
+    display: block !important;
+    left: -9999px !important;
+    position: absolute !important;
+    top: -9999px !important;
+}
